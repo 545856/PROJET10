@@ -4,23 +4,92 @@
 
 using namespace std;
 
-//
-// Vecteurs 3D
-//
+//--------------
+// Vecteurs 3D -
+//--------------
+//C'tor
 CVecteur3D::CVecteur3D(float fC1, float fC2, float fC3)
 {
 	this->m_fX = fC1;
 	this->m_fY = fC2;
 	this->m_fZ = fC3;
 }
+//D'tor
 CVecteur3D::~CVecteur3D()
 {
 	cout << "Destruction violente d'un objet CVecteur3D" << endl;
 }
 
-//
-// Vecteurs 4D
-//
+//--------------
+// JazzInSpace -
+//--------------
+CJazzInSpace::CJazzInSpace(int dReserveCroquettes, int dMood)
+{
+
+}
+CJazzInSpace::~CJazzInSpace()
+{
+	cout << "Homeward Bound: The End of the Incredible Journey" << endl;
+}
+
+//---------
+// CObjet -
+//---------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//--------------
+// Vecteurs 4D -
+//--------------
 CVecteur4D::CVecteur4D(float fC1, float fC2, float fC3, float fC4)
 {
 	this->m_fX = fC1;
@@ -96,16 +165,4 @@ bool CVecteur4D::operator!= (const CVecteur4D& oVect)
 	{
 		return false;
 	}
-}
-
-//
-// JazzInSpace
-//
-CJazzInSpace::CJazzInSpace(int dReserveCroquettes, int dEnergie, int dMood)
-{
-
-}
-CJazzInSpace::~CJazzInSpace()
-{
-	cout << "Homeward Bound: The End of the Incredible Journey" << endl;
 }
